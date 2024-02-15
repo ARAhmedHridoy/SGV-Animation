@@ -1,0 +1,48 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wavy{
+    height: 20vw;
+    width: 50vw;
+    stroke-dasharray: 710;
+    animation: 4S fillwavy infinite;
+}
+@keyframes fillwavy{
+    0%{
+        stroke-dashoffset: 710;
+    }
+    30%{
+        stroke-dashoffset: 710;
+    }
+    90%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+#text{
+    height: 50vw;
+    width: 80vw;
+    stroke-dasharray: 2128;
+    animation: 5S fillsvg infinite alternate;
+}
+@keyframes fillsvg{
+    0%{
+        stroke-dashoffset: 2128;
+    }
+    20%{
+        stroke-dashoffset: 2128;
+    }
+    90%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
